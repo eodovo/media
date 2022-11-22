@@ -1,0 +1,143 @@
+.intro {
+    text-align: center;
+    margin-top: 0;
+    padding: 4% 0;
+}
+
+.intro h3 {
+    font-family: dlight;
+}
+
+.grid-image-item,
+.grid--images .grid-sizer {
+    width: 20%;
+}
+
+.grid-image-item {
+    float: left;
+    margin-bottom: 10px;
+    transition: all .5s;
+
+}
+
+.grid-image-item img {
+    display: block;
+    width: 96%;
+    /* margin: 10px auto; */
+    transition: all .5s;
+}
+
+.grid-image-item strong {
+    display: block;
+    width: 96%;
+    text-align: center;
+    /* margin: 10px auto; */
+    padding: 2% 0;
+    font-family: dlight;
+}
+
+.grid-image-item p {
+    display: block;
+    width: 96%;
+    text-align: center;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+.inner {
+    width: 96%;
+    background-color: #666;
+    transition: all .5s;
+    padding-bottom: 10px;
+}
+
+.duo.example {
+    padding-top: 1%;
+    padding-bottom: 10%;
+}
+
+@media(hover:hover) {
+    .grid--images:hover .grid-image-item img {
+        filter: grayscale(.6);
+        opacity: 1;
+    }
+
+    .grid--images:hover .grid-image-item:hover .inner {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+    }
+
+    .grid--images:hover .grid-image-item:hover img {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    .grid--images .grid-image-item:hover .inner {
+        background: #666;
+    }
+
+    .grid--images .grid-image-item:hover strong {
+        color: orange;
+    }
+
+    .grid--images .grid-image-item:hover p {
+        color: #fff;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 25%;
+    }
+
+    .videoBox>h2 {
+        font-family: Tillana;
+    }
+
+    .intro h3 {
+        font-family: Tillana;
+    }
+
+    .grid-image-item strong {
+        font-family: Tillana;
+        color: orange;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 50%;
+    }
+}
+
+
+/* 640px~768px 소형테블릿 */
+@media screen and (max-width:768px) {
+    .videoBox>h2 {
+        font-size: 4.333rem;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .videoBox>h2 {
+        font-size: 3.333rem;
+    }
+
+    .intro h3 {
+        font-size: 1.5em;
+    }
+}

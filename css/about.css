@@ -1,0 +1,633 @@
+#content {
+    width: 100%;
+    margin: 0;
+}
+
+.videoBox>h2 {
+    font-family: dlight;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    margin-top: -56.535px;
+    width: 100%;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 5.333rem;
+    position: absolute;
+}
+
+/* .videoBox h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/about/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} */
+
+
+
+/* section1 */
+#section1 {
+    background-image: url(../images/about/section1Bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -17px;
+}
+
+#section1 .frame1 {
+
+    border: 10px solid;
+    border-image: url(../images/about/frame.png) 25 round;
+    position: relative;
+    padding: 1%;
+}
+
+#section1 .frame1 ul {
+    display: grid;
+    grid-auto-columns: 700px 1fr;
+    grid-template-areas: 'a b';
+    grid-auto-rows: 700px;
+    column-gap: 3%;
+}
+
+#section1 .frame1 ul li:nth-of-type(1) {
+    margin-top: 30%;
+    grid-area: a;
+}
+
+
+#section1 .frame1 ul li:nth-of-type(2) {
+    border: 15px solid;
+    border-image: url(../images/about/innerframe.png) 22 round;
+    background-image: url(../images/about/boss.png);
+    background-size: 114%;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: b;
+    filter: brightness(.7);
+    transition: all .5s;
+}
+
+#section1 .frame1 ul li:nth-of-type(2):hover {
+    filter: brightness(1);
+}
+
+#section1 .frame1 ul li p {
+    display: inline-block;
+}
+
+#section1 .frame1 ul li h3 {
+    font-family: dlight;
+    font-size: 4em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    background: url("https://assets.codepen.io/489403/firegif_1.gif");
+    background-position-y: 108px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+#section1 .frame1 ul li:nth-of-type(1)::before {
+    content: 'Relive the Classic';
+    position: absolute;
+    font-size: 1.2em;
+    z-index: 10;
+    top: 28%;
+    left: 1.5%;
+    font-family: 'dlight';
+    color: #fff;
+}
+
+#section1 .frame1 ul li p:nth-of-type(1) {
+    font-size: 1.3em;
+    word-break: keep-all;
+    line-height: 2em;
+}
+
+
+
+
+
+/* section2 */
+#section2 {
+    background-image: url(../images/about/section2Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#section2 h3,
+#section3 h3 {
+    padding-top: 5%;
+    font-family: dlight;
+    font-size: 4em;
+    background: url(https://assets.codepen.io/489403/firegif_1.gif);
+    background-position-y: 175px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#section2 h3 span {
+    background: url(https://assets.codepen.io/489403/firegif_1.gif);
+    background-position-y: 108px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section2 p {
+    text-align: center;
+    width: 1000px;
+    margin: 4% auto;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+#section3 .section3Inner p {
+    text-align: center;
+    width: 800px;
+    margin: 4% auto;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+.swiper-button-prev {
+    background-image: url(../images/about/trailer_prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 95%;
+    left: 40%;
+}
+
+.swiper-button-next {
+    background-image: url(../images/about/trailer_next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 95%;
+    right: 40%;
+}
+
+.swiper-slide img {
+    box-shadow: 19px 17px 17px 2px rgb(0 0 0 / 105%);
+    border: 1px solid #da291c;
+    transform: scale(0.95);
+    transition: .5s;
+    filter: brightness(0.7);
+}
+
+
+.swiper-slide:hover img {
+    transform: scale(1);
+    filter: brightness(1);
+}
+
+/* midbg */
+.midbg {
+    position: relative;
+    height: 16.666rem;
+    background-image: url(../images/about/midbg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* section3 */
+
+
+#section3 {
+    background-image: url(../images/about/section3Bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    padding-bottom: 10%;
+}
+
+#section3 p {
+    width: 40%;
+    font-size: 1.3em;
+    line-height: 2em;
+    margin: 1% 0;
+}
+
+.slide .q {
+    font-family: dlight;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+    animation: list-item-label-glow 2000ms ease-in-out 500ms infinite alternate;
+    filter: drop-shadow(0px 0px 3px rgba(224, 165, 115, 0.66)) drop-shadow(0px 0px 4px #C85541);
+}
+
+.slide .q a.trigger {
+    display: block;
+    font-size: 1.6em;
+}
+
+.slide .hide .q a.trigger {
+    background: none;
+    transition: all .3s;
+}
+
+.slide .a {
+    line-height: 2em;
+    display: none;
+    overflow: hidden;
+    letter-spacing: -1px;
+    word-break: keep-all;
+
+}
+
+.slide ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slide ul li p {
+    padding-left: 55px;
+    position: relative;
+    word-break: keep-all;
+
+}
+
+.slide ul li img {
+    position: absolute;
+    right: 11%;
+    top: -25%;
+}
+
+
+
+/* 1024px~1280px 일반pc */
+@media screen and (max-width:1280px) {
+    #section1 .frame1 ul {
+        grid-auto-columns: 500px 1fr;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        top: 21%;
+    }
+
+    #section1 .frame1 ul li h3 {
+        line-height: 1em;
+        background-position-y: 120px;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(2) {
+        background-size: 141%;
+    }
+
+
+    .swiper-wrapper {
+        padding-left: 66%;
+    }
+
+    .slide p {
+        max-width: 500px;
+    }
+
+    .slide ul li img {
+        top: -21%;
+        right: 0;
+    }
+}
+
+
+/* 768px~1024px 일반테블릿 */
+@media screen and (max-width:1024px) {
+    #section1 .frame1 ul {
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+            'a'
+            'b';
+        grid-auto-rows: 1fr 2fr;
+    }
+
+    #section1 .frame1 ul li h3 {
+        text-align: center;
+        background-position-y: 78px;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(1) {
+        margin-top: 10%;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        top: 5%;
+        left: 50%;
+        margin-left: -106px;
+    }
+
+    #section1 .frame1 ul li p:nth-of-type(1) {
+        text-align: center;
+    }
+
+
+
+    #section1 .frame1 ul li:nth-of-type(2) {
+        margin-top: 10%;
+    }
+
+    #section2 h3 {
+        font-size: 3em;
+    }
+
+    #section2 p {
+        font-size: 1em;
+    }
+
+    #section3 {
+        padding-bottom: 70%;
+        background-repeat: repeat;
+    }
+
+    .midbg {
+        display: none;
+    }
+
+
+    .slide ul li img {
+        top: 100%;
+        left: 50%;
+        margin-left: -411px;
+    }
+
+    .slide ul {
+        align-items: center;
+        text-align: center;
+    }
+
+    #section3 p {
+        padding-left: 0;
+        margin: 5% 0;
+    }
+
+    #section3 a {
+        width: 100%;
+    }
+
+    #section3 p {
+        margin: 5% auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .videoBox>h2 {
+        font-family: Tillana;
+    }
+
+    #section1 .frame1 ul li h3 {
+        font-family: Tillana;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        font-family: Tillana;
+    }
+
+    #section2 h3 {
+        font-family: Tillana;
+    }
+
+    #section2 h3,
+    #section3 h3 {
+        font-family: Tillana;
+    }
+
+    #section3 a {
+        font-family: Tillana;
+    }
+}
+
+
+
+
+/* 640px~768px 소형테블릿 */
+@media screen and (max-width:768px) {
+    #section3 {
+        padding-bottom: 80%;
+    }
+
+    .videoBox>h2 {
+        font-size: 4.333rem;
+    }
+
+    .midbg {
+        display: none;
+    }
+
+    #section3 a {
+        width: 100%;
+    }
+
+    #section3 p {
+        margin: 5% auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #section1 .frame1 ul li h3 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #section1 .news {
+        width: 100%;
+        text-align: center;
+    }
+
+    #section3 p {
+        margin: 5% auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .midbg {
+        display: none;
+    }
+
+    #section1 .frame1 ul li h3 {
+        font-size: 3em;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        top: 4%;
+    }
+
+    #section1 .frame1 ul {
+        grid-auto-rows: 1fr 1fr;
+
+    }
+
+    #section1 .frame1 ul li:nth-of-type(2) {
+        background-size: 100%;
+        filter: brightness(1);
+    }
+
+
+    #section2 h3 {
+        font-size: 2em;
+        background-position-y: 116px;
+    }
+
+    #section2 p {
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        filter: brightness(1);
+    }
+
+    #section3 {
+        padding-bottom: 100%;
+    }
+
+    #section3 h3 {
+        font-size: 3em;
+        background-position-y: 114px;
+    }
+
+
+    #section3 .section3Inner p {
+        width: 100%;
+    }
+
+    .slide ul li img {
+        width: 100%;
+        margin-left: -318px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        margin-left: -74px;
+    }
+
+    #section1 .news {
+        width: 100%;
+        text-align: center;
+    }
+
+    #section1 .frame1 ul li h3 {
+        font-size: 2.5em;
+        font-family: Tillana;
+    }
+
+    #section1 .frame1 ul li p:nth-of-type(1) {
+        font-size: 1em;
+        font-family: Tillana;
+
+    }
+
+    #section2 h3 {
+        font-size: 1.7em;
+        font-family: Tillana;
+    }
+
+    #section3 {
+        padding-bottom: 80%;
+    }
+
+    #section3 h3 {
+        font-size: 2.5em;
+        font-family: Tillana;
+
+    }
+
+    #section3 .section3Inner p {
+        font-size: 1em;
+        font-family: Tillana;
+    }
+
+    #section3 p {
+        width: 100%;
+        font-family: Tillana;
+    }
+
+    .slide ul li img {
+        width: 90%;
+        left: 50%;
+        margin-left: -216px;
+    }
+
+
+    #section3 p:nth-of-type(2) {
+        font-size: 1.1em;
+        font-family: Tillana;
+    }
+}
+
+@media screen and (max-width:390px) {
+    #section1 .news {
+        width: 100%;
+        text-align: center;
+    }
+
+    #section1 .news h2 {
+        margin-left: 0;
+    }
+
+    .videoBox>h2 {
+        font-size: 3.333rem;
+        font-family: Tillana;
+    }
+
+    #section1 .frame1 ul li h3 {
+        font-size: 2em;
+        font-family: Tillana;
+    }
+
+
+    #section1 .frame1 ul li:nth-of-type(1)::before {
+        top: 3%;
+        font-family: Tillana;
+        left: 50%;
+        margin-left: -73px;
+    }
+
+    #section1 .frame1 ul li:nth-of-type(2) {
+        background-size: 143%;
+        background-position-x: 14%;
+    }
+
+    #section2 h3 {
+        font-size: 1.5em;
+        font-family: Tillana;
+    }
+
+    #section3 h3 {
+        font-size: 2em;
+        font-family: Tillana;
+    }
+
+    .slide ul li img {
+        margin-left: -175.5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
