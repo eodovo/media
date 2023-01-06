@@ -1,4 +1,4 @@
-# 기업형 PC 웹사이트
+# 디아블로3 반응형 웹사이트
 
 ## https://eodovo.cafe24.com/media
 
